@@ -1,0 +1,38 @@
+:root {
+    --color-bg-primary: hsl(240, 71%, 19%);
+    --color-bg-secondary: #150578;
+    --color-headings: #218ac7;
+    --color-text: #78C0E0;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-headings)
+}
+
+footer {
+    background-color: var(--color-bg-secondary);
+}
+
+h1 {
+    color: var(--color-headings);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    color: var(--color-headings);
+}
+

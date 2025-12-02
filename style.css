@@ -1,0 +1,40 @@
+/* CSS variables for colors */
+:root {
+  --color-primary-bg: hsl(240, 71%, 19%);
+  --color-secondary-bg: hsl(248, 92%, 25%);
+  --color-text: hsl(198, 66%, 74%);
+  --color-headings: hsl(202, 87%, 51%);
+  --color-cta: hsl(234, 77%, 43%);
+}
+
+/* Tells the browser to stop scrolling 80px from the top */
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-primary-bg);
+  color: var(--color-text);
+}
+h1 {
+    color: var(--color-headings);
+}
+header {
+  background-color: var(--color-secondary-bg);
+}
+
+footer {
+  background-color: var(--color-secondary-bg);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+a:hover {
+  color: var(--color-headings);
+}
