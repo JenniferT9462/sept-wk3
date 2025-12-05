@@ -148,32 +148,58 @@
       </div>
 
       <!-- Section - Contact Form -->
-      <div class="container border rounded-2 mb-4 p-3" id="contact">
+      <form id="leadForm" class="container border border-2 rounded-4 p-4">
         <h1 class="display-5">Contact Us</h1>
         <div class="mb-3">
-          <label for="contactName">Name</label>
-          <input type="text" id="contactName" class="form-control" />
+          <label for="contactName" class="form-label">Name</label>
+          <input type="text" id="contactName" class="form-control"/>
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" />
+          <label for="contactEmail" class="form-label">Email Address</label>
+          <input type="email" id="contactEmail" class="form-control"/>
         </div>
+
         <div class="mb-3">
           <label for="contactMessage" class="form-label">Message</label>
-          <textarea
-            class="form-control"
-            id="contactMessage"
-            rows="3"
-          ></textarea>
+          <textarea id="contactMessage" class="form-control"></textarea>
         </div>
-        <button class="btn btn-primary">Submit</button>
-      </div>
-    </main>
 
+        <button class="btn btn-primary" onClick="saveUser()">Submit</button>
+
+      </form>
+
+      <div class="mt-4 text-center container">
+        <h1 class="display-5">Leads</h1>
+        <button onClick="getLeads()" class="btn btn-primary mt-4">Get Leads</button>
+        <table id="leadsTable" class="table mt-4" hidden>
+           <thead>
+            <tr>
+              <th scope="col">
+                #
+              </th>
+              <th scope="col">
+                Name
+              </th>
+              <th scope="col">
+                Email
+              </th>
+              <th scope="col">
+                Message
+              </th>
+            </tr>
+          </thead>
+          <tbody id="leadsItems">
+                
+          </tbody>
+        </table>
+      </div>
+      
     <!-- Footer -->
     <footer class="text-center">
       <p>&copy; 2025 Created @ Codex</p>
     </footer>
+
+    <script src="day2.js"></script>
   </body>
 </html>
